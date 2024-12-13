@@ -1,0 +1,641 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  cursor: url(https://cdn.custom-cursor.com/db/4398/32/arrow2535.png), default !important;
+}
+
+
+@font-face {
+  font-family: "chomb";
+  src: url(./fontss/Chomsky-399c.woff);
+}
+
+@font-face {
+  font-family: "frank";
+  src: url(./fontss/franklin-normal-600.ttf);
+}
+
+@font-face {
+  font-family: "franklow";
+  src: url(./fontss/libre-franklin.extralight.otf);
+}
+
+.uph {
+  margin-top: 3px;
+  width: 100%;
+  height: 159px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.search {
+  grid-column: 2;
+}
+
+.bx-search-alt-2 {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.lenguage {
+  grid-column: 4/7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pay {
+  grid-column: 8/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 11px;
+}
+
+.btnpay0 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 13px;
+  width: 189px;
+  height: 29px;
+  border-style: none;
+  background-color: #567b95;
+  color: aliceblue;
+  margin-top: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.btnpay0:hover{
+
+  background-color: #425e71;
+  
+}
+
+.btnpay1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 13px;
+  width: 64px;
+  height: 29px;
+  border-style: none;
+  background-color: #567b95;
+  color: aliceblue;
+  margin-top: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.btnpay1:hover{
+  background-color: #425e71;
+}
+
+.cursor{
+  cursor: pointer;
+}
+.cursor:hover{
+  text-decoration: underline 2px solid;
+}
+
+.date {
+  grid-row: 3/5;
+  grid-column: 2/4;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.name {
+  font-family: "chomb";
+  grid-row: 3/5;
+  grid-column: 4/8;
+  font-size: 60px;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+
+.net {
+  font-family: "frank";
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row: 3/5;
+  grid-column: 8/9;
+  gap: 8px;
+}
+
+.red{
+  padding-left: 100px;
+}
+
+
+
+.header{
+  grid-row: 5/7;
+  grid-column: 1/10;
+}
+
+.head{
+  grid-column: 1/10;
+  grid-row: 5/7;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; 
+  padding: 10px 0; 
+  top: 11%;
+}
+
+.uh{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+}
+
+.line{
+  height: 2px;
+  width: 80%;
+  background-color: black;
+  margin-left: 10%;
+}
+
+.sub{
+  display: grid;
+  height: 98px;
+  width: 80%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3;
+  gap: 2rem;
+
+}
+
+.subn{
+  display: flex;
+  align-items: center;
+  /* background-color: #955656; */
+  font-family: "frank";
+  gap: 0.5rem;
+
+  && a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 0.5rem;
+    border-right: 1px solid rgb(82, 82, 82);
+  }
+  && a:hover h2{
+    color: #798080;
+  }
+  && a h2{
+    transition: 0.4s ease;
+  }
+}
+.txt{
+  display: flex;
+  flex-direction: column;
+  padding-right: 5px;
+
+  && h2{
+    font-size: 17px;
+    font-weight: bold;
+  }
+  && p{
+    color: rgb(85, 85, 85);
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+.ntc{
+  display: block;
+}
+
+.ntcbox{
+  /* background-color: #567b95; */
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: repeat(1, 1fr);
+  margin:0 153.2px;
+  padding: 29px 0 10px 0;
+  && a{
+    text-decoration: none;
+    color: inherit;
+  }
+  && a:hover h2{
+    text-decoration: underline 2px solid;
+  }
+  && h2{
+    padding: 10px 0 10px 0;
+  }
+  && span{
+    font-weight: 500;
+    text-decoration: none solid rgb(114, 114, 114);
+    color: #727272;
+    font-size: 13px;
+  }
+}
+/* .ntcs{
+  background-color: #425e71;
+} */
+.ntcs1{
+  padding: 0 13px 0 0 ;
+  border-right: 1px solid #dfdfdf;
+
+}
+.ntcs2{
+  padding: 0 13px 0 10px ;
+  border-right: 1px solid #dfdfdf;
+
+}
+.ntcsun{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2,1fr);
+}
+
+.ntcs3, .ntcs4{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto  auto;
+  padding-left: 10px;
+}
+.ntcs3{
+  border-bottom:1px solid #dfdfdf ;
+}
+.ntcs31,.ntcs41{
+  grid-column: 1/3;
+  grid-row: 1;
+}
+.ntcs32,.ntcs42{
+  grid-column: 1;
+  grid-row: 2;
+}
+.ntcs33,.ntcs43{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.ntcb2{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: auto;
+  padding: 29px 0 10px 0;
+  grid-column: 1/4;
+  && a{
+    text-decoration: none;
+    color: inherit;
+  }
+  && a:hover h2{
+    text-decoration: underline 2px solid;
+  }
+}
+.ntcs5{
+  font-size: 17px;
+  padding: 10px 0 0 9px;
+
+  && a:hover p{
+    text-decoration: underline 2px solid;
+  }
+}
+
+.ntcs6{
+  font-size: 17px;
+  padding: 10px 0 0 13px;
+
+  && a:hover p{
+    text-decoration: underline 2px solid;
+  }
+}
+
+.ntcs7{
+  font-size: 17px;
+  padding: 10px 0 0 17px;
+
+  && a:hover p{
+    text-decoration: underline 2px solid;
+  }
+}
+
+.ntcs8{
+  font-size: 17px;
+  padding: 10px 0 0 21px;
+
+  && a:hover p{
+    text-decoration: underline 2px solid;
+  }
+}
+
+.ntcs9{
+  font-size: 17px;
+  padding: 10px 0 0 25px;
+
+  && a:hover p{
+    text-decoration: underline 2px solid;
+  }
+}
+
+.stuffedtext{
+  display: flex;
+  position: absolute;
+  left: 10%;
+  list-style: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stuffed{
+  display: flex;
+  position: absolute;
+  left: 80%;
+  list-style: none;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+
+.ntc2{
+  display: block;
+}
+
+.ntc2box{
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: repeat(1, 1fr);
+  margin:0 200.2px;
+  padding: 29px 0 10px 0;
+  && a{
+    text-decoration: none;
+    color: inherit;
+  }
+  && a:hover h2{
+    text-decoration: underline 2px solid;
+  }
+  && h2{
+    padding: 10px 0 10px 0;
+  }
+}
+
+.ntcs10{
+  padding: 0 13px 0 0 ;
+  border-right: 1px solid #dfdfdf;
+
+}
+.ntcs11{
+  padding: 0 13px 0 10px ;
+  border-right: 1px solid #dfdfdf;
+
+}
+.ntcs12{
+  padding: 0 13px 0 10px ;
+  border-right: 1px solid #dfdfdf;
+
+}
+.ntcsunX{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2,1fr);
+}
+
+.ntcs13, .ntcs14{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto  auto;
+  padding-left: 10px;
+}
+.ntcs13{
+  border-bottom:1px solid #dfdfdf ;
+}
+.ntcs31Z,.ntcs41Z{
+  grid-column: 1/3;
+  grid-row: 1;
+}
+.ntcs32Z,.ntcs42Z{
+  grid-column: 1;
+  grid-row: 2;
+}
+.ntcs33Z,.ntcs43Z{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
+
+
+.ntcbX{
+  display: grid;
+  grid-template-columns: repeat(5,2fr);
+  grid-template-rows: auto;
+  padding: 29px 0 10px 0;
+  grid-column: 1/4;
+  && a{
+    text-decoration: none;
+    color: inherit;
+  }
+  && a:hover h2{
+    text-decoration: underline 2px solid;
+  }
+}
+.ntcsX1{
+  font-size: 17px;
+  padding: 10px 0 0 9px;
+
+  && a:hover p{
+    text-decoration: underline 2px solid;
+  }
+}
+
+.ntcsX2{
+  font-size: 17px;
+  padding: 10px 0 0 13px;
+
+  && a:hover p{
+    text-decoration: underline 2px solid;
+  }
+}
+
+.ntcsX3{
+  font-size: 17px;
+  padding: 10px 0 0 17px;
+
+  && a:hover p{
+    text-decoration: underline 2px solid;
+  }
+}
+
+.ntcsX4{
+  font-size: 17px;
+  padding: 10px 0 0 21px;
+
+  && a:hover p{
+    text-decoration: underline 2px solid;
+  }
+}
+
+.ntcsX5{
+  font-size: 17px;
+  padding: 10px 0 0 25px;
+
+  && a:hover p{
+    text-decoration: underline 2px solid;
+  }
+}
+
+.footer{
+  height: 560px;
+  width: 80%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  grid-template-rows: repeat(11, 1fr); 
+
+  && p:hover{
+    text-decoration: underline 1px solid;
+    cursor: pointer;
+  }
+}
+
+.nytfootup{
+  grid-column: 1/6;
+  grid-row: 1;
+}
+
+.nytfoott{
+  padding: 10px;
+  font-family: 'chomb';
+  font-size: 22px;
+}
+
+.nytfootp{
+  font-family: 'frank';
+  padding: 10px;
+  font-size: 10px;
+}
+
+.home{
+  display: flex;
+  justify-content: end;
+  grid-column: 6/12;
+  grid-row: 1;
+  text-decoration: none;
+}
+
+.footnews{
+  grid-column: 1;
+  grid-row: 2/11;
+}
+
+.footh{
+  font-family: 'frank';
+  font-size: 9px;
+  margin-bottom: 5px;
+}
+
+.foottext{
+  font-size: 13px;
+  font-family: 'franklow';
+  
+}
+
+.footp{
+  margin-bottom: 7px;
+  font-weight: 700;
+}
+
+.footarts{
+  grid-column: 2;
+  grid-row: 2/11;
+}
+
+.footlife{
+  grid-column: 3;
+  grid-row: 2/11;
+}
+
+.footacc{
+  grid-column: 6;
+  grid-row: 2/11;
+
+  && h2:hover{
+    text-decoration: underline 2px solid;
+    cursor: pointer;
+  }
+}
+
+.nytfoott{
+  font-size: 17px;
+}
+
+.nytfootcen{
+  font-family: 'franklin';
+  font-size: 17px;
+  margin-top: 8px;
+}
+
+.footlogs{
+  display: flex;
+}
+
+.footlogs2{
+  display: flex;
+  margin-left: 7px;
+}
+
+.footlogs3{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 7px;
+}
+
+.bxs-user{
+font-size: 17px;
+}
+
+.nytfootcen2{
+  font-family: 'franklin';
+  font-size: 17px;
+  padding-left: 7px;
+}
+.nytfootcen3{
+  font-family: 'franklin';
+  font-size: 17px;
+  padding-left: 7px;
+}
+
+.bx-message-square-detail{
+  font-size: 17px;
+}
+
+.footp1{
+  padding-left: 7px;
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.final{
+  width: 80%;
+  margin-left: 13%;
+  padding-bottom: 5%;
+  gap: 20px;
+  display: flex;
+  font-size: 10px;
+}
